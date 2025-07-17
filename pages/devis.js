@@ -1,12 +1,21 @@
 import Head from 'next/head'
 import { Mail, MapPin } from 'lucide-react'
-import { useState, useRef } from 'react'
-import PageHeader from '../components/PageHeader'
+import { useState, useRef, useEffect } from 'react'
+import { useRouter } from 'next/router'
+import PageHeader from '../components/PageHeader';
 
-export default function Contact() {
+export default function Devis() {
   const [formStatus, setFormStatus] = useState({ type: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const formRef = useRef(null);
+  const router = useRouter();
+  const { service } = router.query;
+
+  useEffect(() => {
+    if (service && formRef.current) {
+      formRef.current.subject.value = `Devis – ${decodeURIComponent(service)}`;
+    }
+  }, [service]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -14,16 +23,12 @@ export default function Contact() {
     setFormStatus({ type: '', message: '' });
 
     try {
-      console.log('Starting form submission...');
-
       const formData = {
         name: e.target.name.value,
         email: e.target.email.value,
         subject: e.target.subject.value,
         message: e.target.message.value,
       };
-
-      console.log('Sending form data to server:', formData);
       
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -34,12 +39,11 @@ export default function Contact() {
       });
 
       const data = await response.json();
-      console.log('Server response:', data);
 
       if (response.ok) {
         setFormStatus({
           type: 'success',
-          message: 'Votre message a été envoyé avec succès. Vous recevrez bientôt un email de confirmation.',
+          message: 'Votre demande de devis a été envoyée avec succès. Vous recevrez bientôt un email de confirmation.',
         });
         formRef.current.reset();
       } else {
@@ -49,7 +53,7 @@ export default function Contact() {
       console.error('Form submission error:', error);
       setFormStatus({
         type: 'error',
-        message: error.message || 'Une erreur est survenue lors de l\'envoi du message. Veuillez réessayer.',
+        message: error.message || 'Une erreur est survenue lors de l\'envoi de votre demande. Veuillez réessayer.',
       });
     } finally {
       setIsSubmitting(false);
@@ -59,23 +63,23 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Contact - VBL SOLUTION</title>
-        <meta name="description" content="Contactez VBL SOLUTION pour vos besoins en maintenance industrielle et support technique." />
+        <title>Demande de Devis - VBL SOLUTION</title>
+        <meta name="description" content="Demandez un devis personnalisé pour vos besoins en maintenance industrielle et support technique." />
       </Head>
 
       <main>
         <PageHeader 
-          title="Contact"
-          subtitle="Une question ? Un projet ? Contactez-nous pour en discuter."
+          title="Demande de Devis"
+          subtitle="Obtenez un devis personnalisé pour votre projet"
         />
 
         {/* Contact Section */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-              {/* Contact Form */}
+              {/* Quote Form */}
               <div className="bg-white p-8 rounded-lg shadow-lg relative">
-                <h2 className="text-2xl font-bold text-vbl-dark mb-6">Envoyez-nous un message</h2>
+                <h2 className="text-2xl font-bold text-vbl-dark mb-6">Détails de votre demande</h2>
                 
                 {formStatus.message && (
                   <div 
@@ -120,27 +124,28 @@ export default function Contact() {
 
                   <div>
                     <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
-                      Sujet
+                      Service concerné
                     </label>
                     <input
                       type="text"
                       id="subject"
                       name="subject"
                       required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-vbl-blue focus:border-vbl-blue"
-                      disabled={isSubmitting}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-vbl-blue focus:border-vbl-blue bg-gray-50"
+                      disabled={true}
                     />
                   </div>
 
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                      Message
+                      Description de vos besoins
                     </label>
                     <textarea
                       id="message"
                       name="message"
                       rows="4"
                       required
+                      placeholder="Décrivez votre projet ou vos besoins en détail..."
                       className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-vbl-blue focus:border-vbl-blue"
                       disabled={isSubmitting}
                     ></textarea>
@@ -153,7 +158,7 @@ export default function Contact() {
                       className={`w-full bg-vbl-blue text-white py-3 px-6 rounded-lg font-medium shadow-md
                         ${isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:brightness-110'}`}
                     >
-                      {isSubmitting ? 'Envoi en cours...' : 'Envoyer le message'}
+                      {isSubmitting ? 'Envoi en cours...' : 'Demander un devis'}
                     </button>
                   </div>
                 </form>

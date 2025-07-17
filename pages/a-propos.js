@@ -2,7 +2,8 @@ import Head from 'next/head'
 import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { Shield, Clock, Users, Lightbulb, Target } from 'lucide-react'
+import { Shield, Clock, Users, Lightbulb } from 'lucide-react'
+import PageHeader from '../components/PageHeader'
 
 // Animation variants
 const fadeIn = {
@@ -58,31 +59,10 @@ export default function About() {
       </Head>
 
       <main className="bg-gray-50">
-        {/* Hero Section */}
-        <motion.section 
-          initial="hidden"
-          animate="visible"
-          variants={fadeIn}
-          className="relative bg-vbl-dark text-white py-20 md:py-32 overflow-hidden"
-        >
-          {/* Background Pattern */}
-          <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
-          
-          <div className="container mx-auto text-center relative z-10">
-            <motion.h1 
-              className="text-4xl md:text-6xl font-bold mb-6"
-              variants={fadeIn}
-            >
-              Notre Histoire
-            </motion.h1>
-            <motion.p 
-              className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto"
-              variants={fadeIn}
-            >
-              Une vision innovante au service de l'industrie
-            </motion.p>
-          </div>
-        </motion.section>
+        <PageHeader 
+          title="Notre Histoire"
+          subtitle="Une vision innovante au service de l'industrie"
+        />
 
         {/* Vision Section */}
         <section className="py-16 md:py-24">
@@ -153,9 +133,7 @@ export default function About() {
                 >
                   Ces valeurs fondamentales guident chacune de mes actions et reflètent mon engagement envers l'excellence.
                   Mon but : que vous soyez plus satisfait de mon travail que ce que je ne le suis.
-
                 </motion.p>
-                
                 <div className="w-20 h-1 bg-vbl-red mx-auto mt-5"></div>
               </div>
 

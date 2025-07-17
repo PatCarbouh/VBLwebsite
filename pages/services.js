@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Services from '../components/Services'
 import Link from 'next/link'
+import PageHeader from '../components/PageHeader'
 
 export default function ServicesPage() {
   return (
@@ -11,16 +12,10 @@ export default function ServicesPage() {
       </Head>
 
       <main>
-        {/* Page Header */}
-        <div className="bg-vbl-dark text-white py-20 md:py-32">
-          <div className="container mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">Nos Services</h1>
-            <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-              Des solutions techniques adaptées à vos besoins industriels, avec une expertise
-              reconnue et un engagement total envers votre satisfaction.
-            </p>
-          </div>
-        </div>
+        <PageHeader 
+          title="Nos Services"
+          subtitle="Des solutions techniques adaptées à vos besoins industriels, avec une expertise reconnue et un engagement total envers votre satisfaction."
+        />
 
         {/* Services Section */}
         <Services />

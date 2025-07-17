@@ -55,7 +55,7 @@ const ServiceCard = ({ service }) => {
 
         {/* CTA Button */}
         <Link
-          href="/contact"
+          href={`/devis?service=${encodeURIComponent(service.title)}`}
           className="block w-full bg-vbl-red hover:bg-vbl-red/90 text-white py-3 rounded-lg text-center transition-all duration-300 transform hover:scale-[1.02]"
         >
           Demander un devis

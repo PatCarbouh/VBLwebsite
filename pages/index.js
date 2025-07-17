@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import HeroSection from '../components/HeroSection'
+import PageHeader from '../components/PageHeader'
 import StorySection from '../components/StorySection'
 import Services from '../components/Services'
 import ReviewSection from '../components/ReviewSection'
@@ -14,7 +14,10 @@ export default function Home() {
       </Head>
 
       <main>
-        <HeroSection />
+        <PageHeader 
+          title="Solutions Techniques Industrielles"
+          subtitle="Expertise technique et maintenance industrielle sur mesure pour optimiser vos performances"
+        />
         <StorySection />
         <Services />
         <ReviewSection />
