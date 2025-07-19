@@ -102,7 +102,12 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>© {currentYear} VBL SOLUTION. Tous droits réservés.</p>
+          <p className="mb-2">© {currentYear} VBL SOLUTION. Tous droits réservés.</p>
+          <p>
+            <Link href="/informations-legales" className="hover:text-white transition-colors duration-200">
+              Informations légales
+            </Link>
+          </p>
         </div>
       </div>
     </footer>

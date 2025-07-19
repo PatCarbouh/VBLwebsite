@@ -24,7 +24,7 @@ export default function Custom404() {
       <main>
         <PageHeader 
           title="404"
-          subtitle="La page que vous recherchez semble avoir disparu dans l'ombre..."
+          subtitle="La page que vous recherchez semble ne pas exister."
         />
 
         <div className="py-16 md:py-24">
