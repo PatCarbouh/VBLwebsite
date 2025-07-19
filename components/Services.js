@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 
 const services = [
   {
@@ -22,9 +23,28 @@ const services = [
   },
 ]
 
-const ServiceCard = ({ service }) => {
+const fadeInUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0 }
+}
+
+const staggerContainer = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2
+    }
+  }
+}
+
+const ServiceCard = ({ service, index }) => {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-lg group">
+    <motion.div
+      variants={fadeInUp}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      className="bg-white rounded-lg overflow-hidden shadow-lg group transform-gpu hover:translate-y-[-8px] transition-transform duration-300"
+    >
       {/* Image Container */}
       <div className="relative h-64 overflow-hidden">
         <Image
@@ -38,30 +58,53 @@ const ServiceCard = ({ service }) => {
 
       {/* Content */}
       <div className="p-6">
-        <h3 className="text-2xl font-bold text-vbl-dark mb-2">{service.title}</h3>
-        <p className="text-vbl-grey mb-4">{service.description}</p>
+        <motion.h3 
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.2 }}
+          className="text-2xl font-bold text-vbl-dark mb-2"
+        >
+          {service.title}
+        </motion.h3>
+        <motion.p 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+          className="text-vbl-grey mb-4"
+        >
+          {service.description}
+        </motion.p>
         
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mb-6">
-          {service.tags.map((tag, index) => (
-            <span
-              key={index}
+          {service.tags.map((tag, tagIndex) => (
+            <motion.span
+              key={tagIndex}
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.4 + (tagIndex * 0.1) }}
               className="px-3 py-1 text-sm bg-vbl-light text-vbl-red rounded-full"
             >
               {tag}
-            </span>
+            </motion.span>
           ))}
         </div>
 
         {/* CTA Button */}
-        <Link
-          href={`/devis?service=${encodeURIComponent(service.title)}`}
-          className="block w-full bg-vbl-red hover:bg-vbl-red/90 text-white py-3 rounded-lg text-center transition-all duration-300 transform hover:scale-[1.02]"
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
         >
-          Demander un devis
-        </Link>
+          <Link
+            href={`/devis?service=${encodeURIComponent(service.title)}`}
+            className="block w-full bg-vbl-red hover:bg-vbl-red/90 text-white py-3 rounded-lg text-center transition-all duration-300 transform hover:scale-[1.02]"
+          >
+            Demander un devis
+          </Link>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
@@ -69,21 +112,37 @@ const Services = () => {
   return (
     <section className="py-16 md:py-24 bg-vbl-light">
       <div className="container mx-auto">
-        <div className="text-center mb-12">
+        <motion.div 
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-12"
+        >
           <h2 className="text-3xl md:text-4xl font-bold text-vbl-dark mb-4">
             Nos Services
           </h2>
-          <div className="w-20 h-1 bg-vbl-red mx-auto mb-6" />
+          <motion.div 
+            initial={{ width: 0 }}
+            whileInView={{ width: "5rem" }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="h-1 bg-vbl-red mx-auto mb-6"
+          />
           <p className="text-vbl-grey text-lg max-w-2xl mx-auto">
             Des solutions techniques adaptées à vos besoins industriels
           </p>
-        </div>
+        </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <motion.div 
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
           {services.map((service, index) => (
-            <ServiceCard key={index} service={service} />
+            <ServiceCard key={index} service={service} index={index} />
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   )
