@@ -47,16 +47,16 @@ export default function HeroSection() {
               <div className="space-y-4">
                 <div className="relative h-48 rounded-lg overflow-hidden">
                   <Image
-                    src="/industrial-automation.jpg"
-                    alt="Automation industrielle"
+                    src="/Vic_modifie_panneau_thimon.jpg"
+                    alt="Intervention sur panneau de contrôle"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="relative h-64 rounded-lg overflow-hidden">
                   <Image
-                    src="/maintenance-tech.jpg"
-                    alt="Maintenance technique"
+                    src="/industrial-machine.jpg"
+                    alt="Machine industrielle"
                     fill
                     className="object-cover"
                   />
@@ -65,16 +65,16 @@ export default function HeroSection() {
               <div className="space-y-4 mt-8">
                 <div className="relative h-64 rounded-lg overflow-hidden">
                   <Image
-                    src="/production-line.jpg"
-                    alt="Système de contrôle"
+                    src="/conveyor-belt.jpg"
+                    alt="Système de convoyage"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="relative h-48 rounded-lg overflow-hidden">
                   <Image
-                    src="/technical-support.jpg"
-                    alt="Support technique"
+                    src="/packaging-automation.jpg"
+                    alt="Automatisation d'emballage"
                     fill
                     className="object-cover"
                   />

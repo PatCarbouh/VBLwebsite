@@ -77,7 +77,7 @@ export default function About() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
                 <div className="relative h-[400px] overflow-hidden rounded-lg">
                   <Image
-                    src="/technical-support.jpg"
+                    src="/Vic_devant_machine_empaquettage.jpg"
                     alt="Solutions industrielles innovantes"
                     fill
                     className="object-cover"
@@ -197,7 +197,7 @@ export default function About() {
                 </div>
                 <div className="relative h-[400px] overflow-hidden rounded-lg">
                   <Image
-                    src="/conveyor-belt.jpg"
+                    src="/Vic_modifie_panneau_thimon.jpg"
                     alt="Engagement qualité VBL Solution"
                     fill
                     className="object-cover"

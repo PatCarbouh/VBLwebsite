@@ -22,16 +22,20 @@ const backgroundMapping = {
     image: '/control-panel.jpg',
     overlay: 'bg-gradient-to-r from-black/70 to-black/50',
   },
+  '/informations-legales': {
+    image: '/packaging-automation.jpg',
+    overlay: 'bg-gradient-to-r from-black/70 to-black/50',
+  },
   '404': {
     image: '/production-line.jpg',
     overlay: 'bg-gradient-to-b from-black/80 to-black/60',
   },
 };
 
-export default function PageHeader({ title, subtitle }) {
+export default function PageHeader({ title, subtitle, customBackground }) {
   const router = useRouter();
   const path = router.pathname;
-  const background = backgroundMapping[path] || backgroundMapping['404'];
+  const background = customBackground || backgroundMapping[path] || backgroundMapping['404'];
 
   return (
     <div className="relative">

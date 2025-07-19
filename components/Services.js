@@ -17,7 +17,7 @@ const services = [
   {
     title: "Support Technique",
     description: "Assistance technique rapide et efficace. Intervention sur site pour diagnostic et résolution des problèmes. Nous intervenons sur l'ensemble de la France.",
-    image: "/Vic_sur_boitier_elec.jpg",
+    image: "/industrial-machine.jpg",
     tags: ["Urgence", "Diagnostic", "Dépannage"],
   },
 ]
