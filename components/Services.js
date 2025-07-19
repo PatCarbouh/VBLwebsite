@@ -119,7 +119,7 @@ const Services = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-vbl-dark mb-4">
-            Nos Services
+            Mes Services
           </h2>
           <motion.div 
             initial={{ width: 0 }}

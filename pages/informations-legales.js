@@ -23,7 +23,7 @@ export default function InformationsLegales() {
               <p>
                 Le site vblsolution.com est édité par la société VBLsolution,<br />
                 SASU au capital de 10 000€<br />
-                Siège social : 50 Rue François 1er, 75008 PARIS<br />
+                Siège social : 60 Rue François 1er, 75008 PARIS<br />
                 SIREN : 943420869<br />
                 RCS : PARIS
               </p>
@@ -39,7 +39,7 @@ export default function InformationsLegales() {
               <p>
                 Le site est hébergé par VBLsolution (auto-hébergement).<br />
                 Le serveur est administré directement par VBLsolution et est localisé en France.<br />
-                Adresse légale de l'hébergeur : 50 rue François 1er, 75008 PARIS<br />
+                Adresse légale de l'hébergeur : 60 rue François 1er, 75008 PARIS<br />
                 Contact : <a href="mailto:victor.bimal@vblsolution.fr" className="text-blue-600 hover:text-blue-800">victor.bimal@vblsolution.fr</a>
               </p>
             </section>
@@ -57,7 +57,7 @@ export default function InformationsLegales() {
                   rel="noopener noreferrer" 
                   className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-vbl-red hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-colors duration-200"
                 >
-                  Télécharger notre politique RGPD (PDF)
+                  Notre politique RGPD (PDF)
                 </a>
               </div>
             </section>
