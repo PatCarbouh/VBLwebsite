@@ -10,14 +10,14 @@ export default function Realisations() {
   return (
     <>
       <Head>
-        <title>Nos Réalisations - VBL SOLUTION</title>
-        <meta name="description" content="Découvrez nos projets et réalisations en automatisation industrielle et maintenance." />
+        <title>Mes Réalisations - VBL SOLUTION</title>
+        <meta name="description" content="Découvrez mes projets et réalisations en automatisation industrielle et maintenance." />
       </Head>
 
       <main>
         <PageHeader 
-          title="Nos Réalisations"
-          subtitle="Découvrez nos projets et solutions techniques industrielles"
+          title="Mes Réalisations"
+          subtitle="Découvrez mes projets et solutions techniques industrielles"
         />
 
         {/* Construction Notice */}

@@ -66,7 +66,7 @@ export default function Contact() {
       <main>
         <PageHeader 
           title="Contact"
-          subtitle="Une question ? Un projet ? Contactez-nous pour en discuter."
+          subtitle="Une question ? Un projet ? Contactez-moi pour en discuter."
         />
 
         {/* Contact Section */}
@@ -75,7 +75,7 @@ export default function Contact() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               {/* Contact Form */}
               <div className="bg-white p-8 rounded-lg shadow-lg relative">
-                <h2 className="text-2xl font-bold text-vbl-dark mb-6">Envoyez-nous un message</h2>
+                <h2 className="text-2xl font-bold text-vbl-dark mb-6">Envoyez-moi un message</h2>
                 
                 {formStatus.message && (
                   <div 
@@ -92,7 +92,7 @@ export default function Contact() {
                 <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                      Nom
+                      Prénom et Nom
                     </label>
                     <input
                       type="text"

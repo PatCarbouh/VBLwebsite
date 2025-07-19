@@ -74,14 +74,14 @@ export default async function handler(req, res) {
           <h2>Merci de nous avoir contacté</h2>
           <p>Ceci est un message automatique, merci de ne pas y répondre.</p>
           <p>Cher(e) ${name},</p>
-          <p>Nous avons bien reçu votre message et nous vous en remercions. Notre équipe va l'examiner dans les plus brefs délais et vous répondra rapidement.</p>
+          <p>J'ai bien reçu votre message et je vous en remercie. Je vais l'examiner dans les plus brefs délais et vous répondrai rapidement.</p>
           <p>Pour rappel, voici votre message :</p>
           <p><strong>Sujet:</strong> ${subject}</p>
           <p><strong>Message:</strong></p>
           <p>${message}</p>
           <br>
           <p>Cordialement,</p>
-          <p>L'équipe VBL SOLUTION</p>
+          <p>Victor Bimal - VBL SOLUTION</p>
         `,
       });
       console.log('Confirmation email sent successfully:', confirmationMailResponse);

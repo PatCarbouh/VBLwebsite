@@ -85,14 +85,14 @@ const Footer = () => {
                 </span>
               </li>
               <li className="pt-2">
-                <a
-                  href="https://www.linkedin.com/in/victor-bimal-8aa614bb/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+              <a
+                href="https://www.linkedin.com/in/victor-bimal-8aa614bb/"
+                target="_blank"
+                rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors duration-200 inline-block"
-                >
+              >
                   <Linkedin className="h-5 w-5" />
-                </a>
+              </a>
               </li>
             </ul>
           </div>
