@@ -21,6 +21,7 @@ const Navigation = () => {
     { href: '/realisations', label: 'Réalisations' },
     { href: '/a-propos', label: 'À propos' },
     { href: '/contact', label: 'Contact' },
+    { href: '/informations-legales', label: 'Informations Légales' }
   ]
 
   return (
@@ -34,7 +35,7 @@ const Navigation = () => {
           <Logo />
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             {navLinks.map(({ href, label }) => (
               <Link
                 key={href}

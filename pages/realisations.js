@@ -3,30 +3,8 @@ import { Info } from 'lucide-react'
 import PageHeader from '../components/PageHeader'
 import ProjectCard from '../components/ProjectCard'
 
-// Temporary project data - replace with real projects later
-const projects = [
-  {
-    id: 1,
-    title: "Optimisation Ligne de Production",
-    client: "Industrie Agroalimentaire",
-    description: "Amélioration de l'efficacité d'une ligne de production avec mise en place d'automatismes et réduction des temps d'arrêt.",
-    imageUrl: "/production-line.jpg"
-  },
-  {
-    id: 2,
-    title: "Installation Système de Contrôle",
-    client: "Industrie Manufacturière",
-    description: "Mise en place d'un nouveau système de contrôle qualité automatisé avec interface opérateur intuitive.",
-    imageUrl: "/control-panel.jpg"
-  },
-  {
-    id: 3,
-    title: "Maintenance Préventive",
-    client: "Secteur Logistique",
-    description: "Développement et implémentation d'un programme de maintenance préventive pour optimiser la durée de vie des équipements.",
-    imageUrl: "/maintenance-tech.jpg"
-  }
-]
+// Projects will be added here later
+const projects = []
 
 export default function Realisations() {
   return (
