@@ -101,7 +101,7 @@ export default function About() {
                     variants={fadeIn}
                     className="text-lg text-vbl-grey"
                   >
-                    Ma mission est d'accompagner les industries dans leur développement en leur apportant des solutions techniques sur mesure, une expertise pointue et un support réactif. Je m'engage à être plus qu'un simple prestataire - je suis un véritable partenaire technique.
+                    Ma mission est d'accompagner les industries dans leur développement en leur apportant des solutions techniques sur mesure, une expertise pointue et un support réactif. Je m'engage à être plus qu'un simple prestataire : je suis un véritable partenaire technique.
                   </motion.p>
                 </div>
               </div>
@@ -141,22 +141,22 @@ export default function About() {
                 <ValueCard
                   icon={Users}
                   title="Proximité Client"
-                  description="Nous privilégions une relation directe et personnalisée avec chaque client, comprenant leurs besoins spécifiques pour apporter les solutions les plus adaptées."
+                  description="Je  privilégie une relation directe et personnalisée avec chaque client, comprenant leurs besoins spécifiques pour apporter les solutions les plus adaptées."
                 />
                 <ValueCard
                   icon={Shield}
                   title="Qualité de Service"
-                  description="Notre engagement envers l'excellence technique et la qualité de service est au cœur de chaque intervention, garantissant des résultats optimaux."
+                  description="Mon engagement envers l'excellence technique et la qualité de service est au cœur de chacun de mes interventions, garantissant des résultats optimaux."
                 />
                 <ValueCard
                   icon={Clock}
                   title="Réactivité"
-                  description="Nous comprenons l'importance du temps dans l'industrie. Notre capacité à intervenir rapidement permet de minimiser les temps d'arrêt et d'optimiser la productivité."
+                  description="Je comprends l'importance du temps dans l'industrie. Ma capacité à intervenir rapidement permet de minimiser les temps d'arrêt et d'optimiser la productivité."
                 />
                 <ValueCard
                   icon={Lightbulb}
                   title="Expertise"
-                  description="Notre expertise technique approfondie, constamment mise à jour, nous permet de résoudre efficacement les défis les plus complexes."
+                  description="Mon expertise technique approfondie, constamment mise à jour, me permet de résoudre efficacement les défis les plus complexes."
                 />
               </div>
             </motion.div>
@@ -186,13 +186,13 @@ export default function About() {
                     variants={fadeIn}
                     className="text-lg text-vbl-grey"
                   >
-                    Chez VBL SOLUTION, nous nous engageons à être un partenaire fiable et innovant pour nos clients. Notre approche combine expertise technique, réactivité et service personnalisé pour garantir votre satisfaction et le succès de vos projets.
+                    Avec VBL SOLUTION, je m'engage à être un partenaire fiable et innovant pour mes clients. Mon approche combine expertise technique, réactivité et service personnalisé pour garantir votre satisfaction et le succès de vos projets.
                   </motion.p>
                   <motion.p 
                     variants={fadeIn}
                     className="text-lg text-vbl-grey"
                   >
-                    Notre objectif est de contribuer à votre réussite en vous apportant des solutions techniques efficaces et adaptées à vos besoins spécifiques.
+                    Mon objectif est de contribuer à votre réussite en vous apportant des solutions techniques efficaces et adaptées à vos besoins spécifiques.
                   </motion.p>
                 </div>
                 <div className="relative h-[400px] overflow-hidden rounded-lg">

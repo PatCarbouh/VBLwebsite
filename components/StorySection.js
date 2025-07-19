@@ -9,19 +9,19 @@ const StorySection = () => {
           {/* Text Content */}
           <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-vbl-dark">
-              Notre Histoire
+              Mon Histoire
             </h2>
             <div className="w-20 h-1 bg-vbl-red" />
             <p className="text-vbl-grey text-lg">
-              <span className="font-extrabold">VBL</span> SOLUTION est née de la passion de <span className="font-extrabold">V</span>ictor <span className="font-extrabold">B</span>ima<span className="font-extrabold">L</span> pour l'industrie et l'innovation. Technicien de formation, il a commencé sa carrière dans l'industrie en tant que technicien de maintenance pendant 8 ans.
-              En plus de son expérience en technicien de maintenance, il a développé une expertise dans l'automatisme et la programmation.
+              <span className="font-extrabold">VBL</span> SOLUTION pour <span className="font-extrabold">V</span>ictor <span className="font-extrabold">B</span>ima<span className="font-extrabold">L</span> solution, est née de ma passion pour l'industrie et l'innovation. Technicien de formation, j'ai commencé ma carrière dans l'industrie en tant que technicien de maintenance pendant 8 ans.
+              En plus de mon expérience en tant que technicien de maintenance, j'ai développé une expertise dans l'automatisme et la programmation.
             </p>
             <p className="text-vbl-grey text-lg">
-              Son expertise technique et son engagement envers l'excellence lui permet d'offrir des
-              solutions sur mesure pour répondre aux défis complexes de setIsScrolled clients.
+              Mon expertise technique et mon engagement envers l'excellence me permet d'offrir des
+              solutions sur mesure pour répondre à vos défis complexes..
               <br />
               <br />
-              Il se distingue par son approche personnalisée et sa capacité à
+              Je me distingue par mon approche personnalisée et polyvalente, ainsi que ma capacité à
               intervenir rapidement sur site, garantissant ainsi la continuité de vos
               opérations industrielles.
             </p>
