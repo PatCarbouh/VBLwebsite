@@ -10,7 +10,7 @@ const Logo = ({ className = "", imageClassName = "", isFooter = false }) => {
         width={160}
         height={160}
         className={`w-auto object-contain transition-transform duration-300 ${
-          isFooter ? 'h-40 md:h-50' : 'h-12 hover:scale-105' //brightness-0 invert
+          isFooter ? 'h-20 md:h-24' : 'h-12 hover:scale-105' //brightness-0 invert
         } ${imageClassName}`}
         priority
       />
