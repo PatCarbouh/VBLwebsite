@@ -1,9 +1,9 @@
 const reviews = [
   {
-    name: "",
-    company: "",
-    text: "",
-    rating: 1,
+    name: "Justin",
+    company: "VBL SOLUTION",
+    text: "VBL SOLUTION a réalisé un projet de rénovation de notre atelier de production. Leur expertise et leur professionnalisme ont été remarquables. Ils ont su nous accompagner tout au long du projet et nous ont fourni des solutions adaptées à nos besoins. Nous sommes très satisfaits de leur travail et nous recommandons VBL SOLUTION à tous ceux qui cherchent un partenaire de confiance pour leur projet de rénovation.",
+    rating: 5,
   },
   {
     name: "",
