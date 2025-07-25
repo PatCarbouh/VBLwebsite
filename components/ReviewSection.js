@@ -3,23 +3,25 @@ import Link from 'next/link'
 
 const reviews = [
   {
-    name: "Justin",
+    name: "",
     company: "VBL SOLUTION",
-    text: "Test",
+    text: "Bientôt disponible",
     rating: 5,
   },
-  {
+    {
     name: "",
-    company: "",
-    text: "",
-    rating: 2,
+    company: "VBL SOLUTION",
+    text: "Bientôt disponible",
+    rating: 5,
   },
-  {
+    {
     name: "",
-    company: "",
-    text: "",
-    rating: 3,
+    company: "VBL SOLUTION",
+    text: "Bientôt disponible",
+    rating: 5,
   },
+  
+
 ]
 
 const ReviewCard = ({ review }) => {

@@ -5,7 +5,31 @@ import ProjectCard from '../components/ProjectCard'
 import ReviewSection from '../components/ReviewSection'
 
 // Projects will be added here later
-const projects = []
+const projects = [
+  {
+    id: 1,
+    title: "",
+    client: "",
+    description: "",
+    imageUrl: ""
+  },
+  {
+    id: 2,
+    title: "",
+    client: "",
+    description: "",
+    imageUrl: ""
+  },
+  {
+    id: 3,
+    title: "",
+    client: "",
+    description: "",
+    imageUrl: ""
+  },
+
+
+]
 
 
 export default function Realisations() {

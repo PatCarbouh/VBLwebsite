@@ -3,6 +3,7 @@ import PageHeader from '../components/PageHeader'
 import StorySection from '../components/StorySection'
 import Services from '../components/Services'
 import ReviewSection from '../components/ReviewSection'
+import HeroSection from '../components/HeroSection'
 
 export default function Home() {
   return (
@@ -14,13 +15,11 @@ export default function Home() {
       </Head>
 
       <main>
-        <PageHeader 
-          title="Solutions Techniques Industrielles"
-          subtitle="Expertise technique et maintenance industrielle sur mesure pour optimiser vos performances"
-        />
+        <HeroSection />
         <StorySection />
         <Services />
         <ReviewSection />
+        
       </main>
     </>
   )
