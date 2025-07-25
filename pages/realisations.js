@@ -2,9 +2,11 @@ import Head from 'next/head'
 import { Info } from 'lucide-react'
 import PageHeader from '../components/PageHeader'
 import ProjectCard from '../components/ProjectCard'
+import ReviewSection from '../components/ReviewSection'
 
 // Projects will be added here later
 const projects = []
+
 
 export default function Realisations() {
   return (
@@ -19,6 +21,7 @@ export default function Realisations() {
           title="Mes Réalisations"
           subtitle="Découvrez mes projets et solutions techniques industrielles"
         />
+        
 
         {/* Construction Notice */}
         <div className="container mx-auto px-4 py-4">
@@ -29,6 +32,7 @@ export default function Realisations() {
             </p>
           </div>
         </div>
+
 
         {/* Projects Grid */}
         <div className="container mx-auto px-4 py-12">
@@ -44,6 +48,8 @@ export default function Realisations() {
             ))}
           </div>
         </div>
+
+        <ReviewSection />
       </main>
     </>
   )

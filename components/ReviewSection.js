@@ -1,8 +1,11 @@
+import Link from 'next/link'
+
+
 const reviews = [
   {
     name: "Justin",
     company: "VBL SOLUTION",
-    text: "VBL SOLUTION a réalisé un projet de rénovation de notre atelier de production. Leur expertise et leur professionnalisme ont été remarquables. Ils ont su nous accompagner tout au long du projet et nous ont fourni des solutions adaptées à nos besoins. Nous sommes très satisfaits de leur travail et nous recommandons VBL SOLUTION à tous ceux qui cherchent un partenaire de confiance pour leur projet de rénovation.",
+    text: "Test",
     rating: 5,
   },
   {
@@ -38,21 +41,38 @@ const ReviewSection = () => {
   return (
     <section className="py-16 md:py-24 bg-vbl-light">
       <div className="container mx-auto">
+        {/* Titre de section */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-vbl-dark mb-4">
             Ils nous font confiance
           </h2>
           <div className="w-20 h-1 bg-vbl-red mx-auto" />
         </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+  
+        {/* Cartes d’avis */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {reviews.map((review, index) => (
             <ReviewCard key={index} review={review} />
           ))}
         </div>
+  
+        {/* Séparateur rouge entre cartes et bouton */}
+        <div className="w-20 h-1 bg-vbl-red mx-auto mb-8" />
+  
+        {/* Bouton CTA */}
+        <div className="flex justify-center">
+          <Link
+            href="/commentaire"
+            className="bg-vbl-red hover:bg-vbl-red/90 text-white py-3 px-6 rounded-lg text-center transition-all duration-300 transform hover:scale-[1.02]"
+          >
+            Laisser un commentaire
+          </Link>
+        </div>
       </div>
     </section>
   )
+  
+  
 }
 
 export default ReviewSection 
