@@ -7,13 +7,13 @@ export default function ServicesPage() {
   return (
     <>
       <Head>
-        <title>Nos Services - VBL SOLUTION</title>
+        <title>Mes Services - VBL SOLUTION</title>
         <meta name="description" content="Découvrez nos services de maintenance industrielle, mise en service et support technique." />
       </Head>
 
       <main>
         <PageHeader 
-          title="Nos Services"
+          title="Mes Services"
           subtitle="Des solutions techniques adaptées à vos besoins industriels, avec une expertise reconnue et un engagement total envers votre satisfaction."
         />
 
