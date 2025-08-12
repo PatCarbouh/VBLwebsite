@@ -174,7 +174,7 @@ export default function Contact() {
                       disabled={isSubmitting}
                     />
                     <label htmlFor="contactPermission" className="text-sm text-gray-700">
-                      J'accepte que VBL SOLUTION me recontacte concernant mon commentaire.
+                      J'accepte que VBL SOLUTION post mon commentaire sur le site.
                     </label>
                   </div>
 

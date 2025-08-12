@@ -57,7 +57,7 @@ export default async function handler(req, res) {
           <p><strong>Note:</strong> ${note}</p>
           <p><strong>Commentaire:</strong></p>
           <p>${message}</p>
-          <p><strong>Autorisation de recontact :</strong> ${contactPermission ? 'Oui' : 'Non'}</p>
+          <p><strong>Autorisation de poster le commentaire sur le site :</strong> ${contactPermission ? 'Oui' : 'Non'}</p>
 
         `,
       });
@@ -78,10 +78,10 @@ export default async function handler(req, res) {
           <h2>Merci de nous avoir contacté</h2>
           <p>Ceci est un message automatique, merci de ne pas y répondre.</p>
           <p>Cher(e) ${name},</p>
-          <p>J'ai bien reçu votre commantaire et je vous en remercie. Je vais l'examiner dans les plus brefs délais et le rajouter sur le site.</p>
+          <p>J'ai bien reçu votre commantaire et je vous en remercie. Je vais l'examiner dans les plus brefs délais.</p>
           <p>Pour rappel, voici votre note : ${note}</p>
           <p>Ainsi que votre commentaire : ${message}</p>
-          <p><strong>Autorisation de recontact :</strong> ${contactPermission ? 'Oui' : 'Non'}</p>
+          <p><strong>Autorisation de poster le commentaire sur le site :</strong> ${contactPermission ? 'Oui' : 'Non'}</p>
 
           <br>
           <p>Cordialement,</p>

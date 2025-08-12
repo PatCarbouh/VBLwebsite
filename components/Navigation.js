@@ -21,7 +21,7 @@ const Navigation = () => {
     { href: '/realisations', label: 'Réalisations' },
     { href: '/a-propos', label: 'À propos' },
     { href: '/contact', label: 'Contact' },
-    { href: '/informations-legales', label: 'Informations Légales' }
+    //{ href: '/informations-legales', label: 'Informations Légales' }
   ]
 
   return (
