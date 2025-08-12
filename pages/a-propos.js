@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { Shield, Clock, Users, Lightbulb, Settings, Zap, Cpu, Wind, Droplet, Gauge, Factory } from 'lucide-react'
 import PageHeader from '../components/PageHeader'
+import ReviewSection from '../components/ReviewSection'
 
 // Animation variants
 const fadeIn = {
@@ -169,7 +170,7 @@ export default function About() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
                 <div className="relative h-[400px] overflow-hidden rounded-lg">
                   <Image
-                    src="/Vic_devant_machine_empaquettage.jpg"
+                    src="/Victor_fin_ligne_face_cam.jpg"
                     alt="Solutions industrielles innovantes"
                     fill
                     className="object-cover"
@@ -340,7 +341,7 @@ export default function About() {
                 </div>
                 <div className="relative h-[400px] overflow-hidden rounded-lg">
                   <Image
-                    src="/Vic_modifie_panneau_thimon.jpg"
+                    src="/Vic_devant_machine_empaquettage.jpg"
                     alt="Mon engagement pour la qualité"
                     fill
                     className="object-cover"
@@ -350,7 +351,9 @@ export default function About() {
             </motion.div>
           </div>
         </section>
+        <ReviewSection />
       </main>
+      
     </>
   )
 } 

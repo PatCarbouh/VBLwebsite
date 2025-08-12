@@ -39,7 +39,7 @@ const StorySection = () => {
           <div className="relative h-[400px] md:h-[500px] overflow-hidden rounded-lg">
             <div className="absolute inset-0 group">
               <Image
-                src="/Vic_devant_machine_empaquettage.jpg"
+                src="/Victor_fin_ligne_face_cam.jpg"
                 alt="Technicien VBL en intervention"
                 fill
                 className="object-cover transform transition-transform duration-500 group-hover:scale-110"

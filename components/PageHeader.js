@@ -7,23 +7,27 @@ const backgroundMapping = {
     overlay: 'bg-gradient-to-r from-black/70 to-black/50',
   },
   '/services': {
-    image: '/factory-line.jpg',
+    image: '/Victor_genoux_tournevis_PageHeader.jpg',
     overlay: 'bg-gradient-to-r from-black/70 to-black/50',
   },
   '/a-propos': {
-    image: '/maintenance-tech.jpg',
+    image: '/Victor_sur_console_PageHeader.jpg',
     overlay: 'bg-gradient-to-b from-black/70 to-black/50',
   },
   '/contact': {
-    image: '/technical-support.jpg',
+    image: '/Victor_avec_classeur_2.jpg',
     overlay: 'bg-gradient-to-r from-black/70 to-black/50',
   },
   '/devis': {
-    image: '/control-panel.jpg',
+    image: '/Victor_avec_classeur_2.jpg',
     overlay: 'bg-gradient-to-r from-black/70 to-black/50',
   },
   '/informations-legales': {
     image: '/packaging-automation.jpg',
+    overlay: 'bg-gradient-to-r from-black/70 to-black/50',
+  },
+    '/realisations': {
+    image: '/Victor_genoux_tournevis_PageHeader.jpg',
     overlay: 'bg-gradient-to-r from-black/70 to-black/50',
   },
   '404': {

@@ -6,8 +6,8 @@ const services = [
   {
     title: "Maintenance Industrielle",
     description: "Service complet de maintenance préventive et corrective pour vos équipements industriels. Optimisation de la performance et réduction des temps d'arrêt.",
-    image: "/Vic_devant_machine_empaquettage.jpg",
-    tags: ["Préventive", "Corrective", "Sur-mesure"],
+    image: "/Victor_avec_boulouneuse.jpg",
+    tags: ["Préventive", "Diagnostic", "Sur-mesure"],
   },
   {
     title: "Mise en Service",
@@ -18,8 +18,8 @@ const services = [
   {
     title: "Support Technique",
     description: "Assistance technique rapide et efficace. Intervention sur site pour diagnostic et résolution des problèmes. Nous intervenons sur l'ensemble de la France.",
-    image: "/industrial-machine.jpg",
-    tags: ["Urgence", "Diagnostic", "Dépannage"],
+    image: "/Victor_fin_ligne_dos.jpg",
+    tags: ["Urgence", "Dépannage", "Correctifs"],
   },
 ]
 

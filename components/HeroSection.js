@@ -129,7 +129,7 @@ export default function HeroSection() {
                   className="relative h-64 rounded-lg overflow-hidden"
                 >
                   <Image
-                    src="/industrial-machine.jpg"
+                    src="/Victor_armoire_electrique.jpg"
                     alt="Machine industrielle"
                     fill
                     className="object-cover"
@@ -143,7 +143,7 @@ export default function HeroSection() {
                   className="relative h-64 rounded-lg overflow-hidden"
                 >
                   <Image
-                    src="/conveyor-belt.jpg"
+                    src="/Victor_avec_classeur.jpg"
                     alt="Système de convoyage"
                     fill
                     className="object-cover"
@@ -155,7 +155,7 @@ export default function HeroSection() {
                   className="relative h-48 rounded-lg overflow-hidden"
                 >
                   <Image
-                    src="/packaging-automation.jpg"
+                    src="/Victor_au_sol_2.jpg"
                     alt="Automatisation d'emballage"
                     fill
                     className="object-cover"
